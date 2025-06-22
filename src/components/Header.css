@@ -1,0 +1,70 @@
+.header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5%;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #00c3ff;
+}
+
+.nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #00c3ff;
+}
+/* Add to existing Header.css */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 5%;
+  }
+  
+  .nav {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: white;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transform: translateY(-150%);
+    transition: transform 0.3s ease;
+    z-index: 999;
+  }
+  
+  .nav.active {
+    transform: translateY(0);
+  }
+  
+  .nav a {
+    margin: 10px 0;
+    padding: 10px;
+  }
+  
+  .menu-toggle {
+    display: block;
+    font-size: 24px;
+  }
+}

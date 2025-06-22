@@ -1,0 +1,129 @@
+.contact-section {
+  padding: 100px 5%;
+  background: linear-gradient(to bottom, #f8faff, #ffffff);
+  position: relative;
+}
+
+.contact-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: linear-gradient(to bottom, white, #f8faff);
+  z-index: 0;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 60px;
+  position: relative;
+  z-index: 1;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-info h2 {
+  font-size: 36px;
+  color: var(--secondary);
+  margin-bottom: 20px;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.contact-info p {
+  font-size: 17px;
+  color: var(--text-light);
+  margin-bottom: 25px;
+  line-height: 1.7;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+  line-height: 1.8;
+  color: var(--text);
+}
+
+.contact-info li {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.contact-info li::before {
+  content: '•';
+  color: var(--primary);
+  font-size: 20px;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  background: var(--card-bg);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(0, 195, 255, 0.2);
+}
+
+.contact-form textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.contact-form .btn {
+  align-self: flex-start;
+  margin-top: 10px;
+}
+
+/* Add to existing ContactSection.css */
+@media (max-width: 768px) {
+  .contact-info h2 {
+    font-size: 28px;
+  }
+  
+  .contact-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .contact-form {
+    padding: 25px;
+  }
+  
+  .contact-form .btn {
+    align-self: stretch;
+    text-align: center;
+  }
+}
