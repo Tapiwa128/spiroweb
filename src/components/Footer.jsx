@@ -1,3 +1,4 @@
+// Footer.jsx
 import React from 'react';
 import './Footer.css';
 
@@ -8,9 +9,11 @@ const Footer = () => {
         <p>&copy; {new Date().getFullYear()} Spirotec Financial Services Inc. All rights reserved.</p>
         <div className="footer-links">
           <a href="#hero">Home</a>
+          <a href="#screenshots">How It Works</a>
           <a href="#faq">FAQs</a>
           <a href="#contact">Contact</a>
         </div>
+        <p className="attribution">Software developed and engineered by Pakama Tech Solutions</p>
       </div>
     </footer>
   );
