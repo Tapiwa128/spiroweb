@@ -1,5 +1,5 @@
 .contact-section {
-  padding: 100px 5%;
+  padding: 6rem 5%;
   background: linear-gradient(to bottom, #f8faff, #ffffff);
   position: relative;
 }
@@ -19,9 +19,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 60px;
+  gap: 3rem;
   position: relative;
   z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .contact-info {
@@ -30,16 +32,17 @@
 }
 
 .contact-info h2 {
-  font-size: 36px;
+  font-size: 2.25rem;
   color: var(--secondary);
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   font-family: 'Space Grotesk', sans-serif;
+  line-height: 1.2;
 }
 
 .contact-info p {
-  font-size: 17px;
+  font-size: 1.0625rem;
   color: var(--text-light);
-  margin-bottom: 25px;
+  margin-bottom: 1.5rem;
   line-height: 1.7;
 }
 
@@ -51,24 +54,29 @@
 }
 
 .contact-info li {
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
   display: flex;
   align-items: flex-start;
-  gap: 10px;
+  gap: 0.625rem;
 }
 
 .contact-info li::before {
   content: '•';
   color: var(--primary);
-  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.contact-info strong {
+  font-weight: 600;
 }
 
 .contact-form {
   flex: 1;
   min-width: 300px;
   background: var(--card-bg);
-  padding: 40px;
-  border-radius: 16px;
+  padding: 2.5rem;
+  border-radius: 1rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
   border: 1px solid rgba(0, 0, 0, 0.03);
 }
@@ -80,14 +88,15 @@
 
 .contact-form input,
 .contact-form textarea {
-  padding: 15px 20px;
-  margin-bottom: 20px;
+  padding: 0.9375rem 1.25rem;
+  margin-bottom: 1.25rem;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  font-size: 16px;
+  border-radius: 0.625rem;
+  font-size: 1rem;
   font-family: 'Poppins', sans-serif;
   transition: all 0.3s ease;
   background: rgba(255, 255, 255, 0.8);
+  width: 100%;
 }
 
 .contact-form input:focus,
@@ -98,32 +107,62 @@
 }
 
 .contact-form textarea {
-  min-height: 150px;
+  min-height: 9.375rem;
   resize: vertical;
 }
 
 .contact-form .btn {
   align-self: flex-start;
-  margin-top: 10px;
+  margin-top: 0.625rem;
+  width: auto;
 }
 
-/* Add to existing ContactSection.css */
+/* Responsive Styles */
 @media (max-width: 768px) {
+  .contact-section {
+    padding: 4rem 5%;
+  }
+  
   .contact-info h2 {
-    font-size: 28px;
+    font-size: 1.75rem;
   }
   
   .contact-container {
     flex-direction: column;
-    gap: 40px;
+    gap: 2.5rem;
   }
   
   .contact-form {
-    padding: 25px;
+    padding: 1.5rem;
   }
   
   .contact-form .btn {
     align-self: stretch;
     text-align: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-section {
+    padding: 3rem 5%;
+  }
+  
+  .contact-info h2 {
+    font-size: 1.5rem;
+  }
+  
+  .contact-info p {
+    font-size: 1rem;
+  }
+  
+  .contact-info li {
+    font-size: 0.9375rem;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 0.75rem 1rem;
+    font-size: 0.9375rem;
   }
 }
