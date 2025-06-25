@@ -44,6 +44,7 @@ function App() {
           <ScreenshotShowcase />
           <FAQSection />
           <ContactSection />
+          <Chatbot />
           <Footer />
         </div>
       )}
