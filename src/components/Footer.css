@@ -96,3 +96,22 @@
     font-size: 14px;
   }
 }
+
+
+
+.attribution a {
+  color: #4fc3f7;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s, text-shadow 0.3s;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.attribution a:hover,
+.attribution a:focus {
+  color: #fff;
+  background: #1976d2;
+  text-decoration: none;
+}
+
