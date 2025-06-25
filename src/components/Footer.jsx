@@ -13,7 +13,14 @@ const Footer = () => {
           <a href="#faq">FAQs</a>
           <a href="#contact">Contact</a>
         </div>
-        <p className="attribution">Software developed and engineered by Pakama Tech Solutions</p>
+       
+<p className="attribution">
+  Software developed and engineered by{' '}
+  <a href="https://pakamatech.co.zw" target="_blank" rel="noopener noreferrer">
+    Pakama Tech Solutions
+  </a>
+</p>
+
       </div>
     </footer>
   );
