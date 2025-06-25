@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import ScreenshotShowcase from './components/ScreenshotShowcase';
 import FAQSection from './components/FAQSection';
 import ContactSection from './components/ContactSection';
+import Chatbot from './components/Chatbot';
 import Footer from './components/Footer';
 import './App.css';
 
