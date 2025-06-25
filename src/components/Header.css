@@ -1,3 +1,4 @@
+/* Header.css */
 .header {
   position: sticky;
   top: 0;
@@ -14,24 +15,72 @@
 .logo {
   font-size: 24px;
   font-weight: bold;
-  color: #00c3ff;
+  color: var(--primary);
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.nav {
+  display: flex;
+  gap: 25px;
 }
 
 .nav a {
-  margin: 0 15px;
   text-decoration: none;
-  color: #2c3e50;
+  color: var(--text);
   font-weight: 500;
   transition: color 0.3s;
+  font-size: 16px;
+  position: relative;
 }
 
 .nav a:hover {
-  color: #00c3ff;
+  color: var(--primary);
 }
-/* Add to existing Header.css */
+
+.nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--primary);
+  transition: width 0.3s ease;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
 .menu-toggle {
   display: none;
+  background: none;
+  border: none;
   cursor: pointer;
+  padding: 10px;
+  z-index: 1001;
+  position: relative;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background: var(--text);
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+.menu-toggle.active span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
 }
 
 @media (max-width: 768px) {
@@ -41,30 +90,30 @@
   
   .nav {
     position: fixed;
-    top: 70px;
+    top: 0;
     left: 0;
     width: 100%;
+    height: 100vh;
     background: white;
     flex-direction: column;
     align-items: center;
-    padding: 20px 0;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    transform: translateY(-150%);
+    justify-content: center;
+    gap: 30px;
+    transform: translateX(100%);
     transition: transform 0.3s ease;
-    z-index: 999;
+    z-index: 1000;
   }
   
   .nav.active {
-    transform: translateY(0);
+    transform: translateX(0);
   }
   
   .nav a {
-    margin: 10px 0;
+    font-size: 20px;
     padding: 10px;
   }
   
   .menu-toggle {
     display: block;
-    font-size: 24px;
   }
 }
