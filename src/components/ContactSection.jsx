@@ -9,7 +9,6 @@ const ContactSection = () => {
           <h2>Contact Us</h2>
           <p>We’re here to help. Reach out to us through any of the following:</p>
           <ul>
-            <li><strong>WhatsApp:</strong> +263 784 959 399</li>
             <li><strong>Phone:</strong> +263 784 959 399</li>
             <li><strong>Email:</strong> info@spirotec.co.zw</li>
             <li><strong>Business Hours:</strong> Mon–Sat, 8am–6pm</li>
