@@ -1,23 +1,40 @@
+// HowItWorks.jsx
 import React from 'react';
-import './ScreenshotShowcase.css';
+import './HowItWorks.css';
 
-const ScreenshotShowcase = () => {
-  const screenshots = [
-    { src: '/assets/screenshots/WhatsApp Image 2025-06-18 at 17.19.00_6b25f90e.jpg', caption: 'USSD Access (*123#)' },
-    { src: '/assets/screenshots/WhatsApp Image 2025-06-05 at 15.09.14_3d8eb924.jpg', caption: 'Employer Dashboard' },
-    { src: '/assets/screenshots/WhatsApp Image 2025-06-05 at 15.09.15_e66e06f6.jpg', caption: 'Advance Request UI' },
-    { src: '/assets/screenshots/WhatsApp Image 2025-06-05 at 15.09.15_0325c1c4.jpg', caption: 'Automatic Repayment Summary' },
+const HowItWorks = () => {
+  const steps = [
+    {
+      title: "Your employer partners with Spirotec",
+      description: "Your employer signs up with Spirotec to allow salary access.",
+      icon: "🏢"
+    },
+    {
+      title: "You sign up with Spirotec, work and earn your wages",
+      description: "As you work daily, your earnings accumulate.",
+      icon: "👨‍💼"
+    },
+    {
+      title: "Access your earnings instantly via USSD or app",
+      description: "Withdraw what you've already earned – anytime.",
+      icon: "📱"
+    },
+    {
+      title: "Get paid as usual on payday",
+      description: "Your advances are deducted automatically, no stress.",
+      icon: "💰"
+    }
   ];
 
   return (
-    <section id="screenshots" className="screenshot-section">
+    <section id="how-it-works" className="how-it-works">
       <h2>How It Works</h2>
-      <p className="subtitle">A quick look at our user-friendly platform</p>
-      <div className="screenshot-grid">
-        {screenshots.map((shot, index) => (
-          <div key={index} className="screenshot-card">
-            <img src={shot.src} alt={shot.caption} />
-            <p>{shot.caption}</p>
+      <div className="steps-container">
+        {steps.map((step, index) => (
+          <div key={index} className="step">
+            <div className="step-icon">{step.icon}</div>
+            <h3>{step.title}</h3>
+            <p>{step.description}</p>
           </div>
         ))}
       </div>
@@ -25,4 +42,4 @@ const ScreenshotShowcase = () => {
   );
 };
 
-export default ScreenshotShowcase;
+export default HowItWorks;
