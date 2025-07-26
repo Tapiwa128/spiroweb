@@ -1,92 +1,36 @@
-.screenshot-section {
-  padding: 100px 5%;
-  background-color: white;
+/* HowItWorks.css */
+.how-it-works {
+  padding: 4rem 5%;
   text-align: center;
-  position: relative;
+  background: white;
 }
 
-.screenshot-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 100px;
-  background: linear-gradient(to bottom, #f0f9ff, white);
-  z-index: 0;
-}
-
-.screenshot-section h2 {
-  font-size: 40px;
-  margin-bottom: 15px;
+.how-it-works h2 {
   color: var(--secondary);
-  font-family: 'Space Grotesk', sans-serif;
-  position: relative;
+  margin-bottom: 3rem;
 }
 
-.screenshot-section .subtitle {
-  font-size: 18px;
-  color: var(--text-light);
-  margin-bottom: 60px;
-  position: relative;
-}
-
-.screenshot-grid {
+.steps-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  position: relative;
-  z-index: 1;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.screenshot-card {
-  background: var(--card-bg);
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-  overflow: hidden;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  border: 1px solid rgba(0, 0, 0, 0.03);
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
+.step {
+  padding: 1.5rem;
+  border-radius: 8px;
+  background: var(--light-bg);
 }
 
-.screenshot-card:hover {
-  transform: translateY(-10px) scale(1.02);
-  box-shadow: 0 15px 40px rgba(0, 195, 255, 0.15);
+.step-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
-.screenshot-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  display: block;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-}
-
-.screenshot-card p {
-  margin: 20px;
-  font-weight: 600;
-  color: var(--text);
-  font-size: 16px;
-}
-
-/* Add to existing ScreenshotShowcase.css */
 @media (max-width: 768px) {
-  .screenshot-section h2 {
-    font-size: 32px;
-  }
-  
-  .screenshot-section .subtitle {
-    font-size: 16px;
-    margin-bottom: 30px;
-  }
-  
-  .screenshot-grid {
+  .steps-container {
     grid-template-columns: 1fr;
-    gap: 20px;
-  }
-  
-  .screenshot-card:hover {
-    transform: none;
   }
 }
