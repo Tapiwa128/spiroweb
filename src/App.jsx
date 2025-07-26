@@ -1,7 +1,11 @@
+// App.jsx
 import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import ScreenshotShowcase from './components/ScreenshotShowcase';
+import WhatIsSpirotec from './components/WhatIsSpirotec';
+import HowItWorks from './components/HowItWorks';
+import UserForm from './components/UserForm';
+import EmployerForm from './components/EmployerForm';
 import FAQSection from './components/FAQSection';
 import ContactSection from './components/ContactSection';
 import Chatbot from './components/Chatbot';
@@ -41,7 +45,10 @@ function App() {
         <div className="App">
           <Header className={scrolled ? 'scrolled' : ''} />
           <Hero />
-          <ScreenshotShowcase />
+          <WhatIsSpirotec />
+          <HowItWorks />
+          <UserForm />
+          <EmployerForm />
           <FAQSection />
           <ContactSection />
           <Chatbot />
