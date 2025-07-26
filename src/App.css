@@ -1,14 +1,16 @@
+/* App.css */
 :root {
-  /* Color Variables */
+  /* Updated Color Variables */
   --primary: #0066cc;
   --primary-light: #00a6ff;
-  --secondary: #0f172a;
+  --secondary: #003366;
   --accent: #00c3ff;
-  --text: #2c3e50;
-  --text-light: #64748b;
-  --bg: #f8fafc;
+  --text: #333333;
+  --text-light: #666666;
+  --bg: #ffffff;
+  --light-bg: #f5f9ff;
   --card-bg: rgba(255, 255, 255, 0.9);
-  --border-color: rgba(0, 0, 0, 0.1);
+  --border-color: #dddddd;
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
   --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
@@ -56,12 +58,33 @@ body, html {
   overflow-x: hidden;
   position: relative;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Sections */
 section {
   padding: 6rem 5%;
   scroll-margin-top: 5rem;
+}
+
+/* Highlight Box */
+.highlight-box {
+  background: white;
+  border-left: 4px solid var(--primary);
+  padding: 1.5rem;
+  margin: 2rem auto;
+  max-width: 600px;
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+}
+
+/* Tagline */
+.tagline {
+  font-style: italic;
+  color: var(--primary);
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
 }
 
 /* Loading Screen */
