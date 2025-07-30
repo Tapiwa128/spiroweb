@@ -61,7 +61,7 @@ const Chatbot = () => {
      return " AM not yet trained to speak Shona, but I can help you in English! If you have questions about Spirotec, feel free to ask in English. 😊";
    }
 
-   else if (input.includes('owener') || input.includes('founder') || input.includes('ceo') || input.includes('who is behind')) {
+   else if (input.includes('owner') || input.includes('founder') || input.includes('ceo') || input.includes('who is behind')) {
       return "Spirotec was founded Tinotenda Karemba with a passion for financial inclusion. Our team is dedicated to helping employees access their earned wages easily and affordably.";
     }
     
