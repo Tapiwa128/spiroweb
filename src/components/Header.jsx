@@ -1,6 +1,8 @@
 // Header.jsx
 import React, { useState } from 'react';
 import './Header.css';
+// Import your logo image (place your logo in the src/assets folder)
+import logo from '../assets/logo.png';
 
 const Header = ({ className }) => {
   const [menuActive, setMenuActive] = useState(false);
@@ -11,8 +13,20 @@ const Header = ({ className }) => {
 
   return (
     <header className={`header ${className || ''}`}>
-      <div className="logo">Spirotec.</div>
-      <button className={`menu-toggle ${menuActive ? 'active' : ''}`} onClick={toggleMenu} aria-label="Menu">
+      <div className="logo">
+        <a href="#hero">
+          <img
+            src={logo}
+            alt="Spirotec Logo"
+            style={{ height: '40px', width: 'auto', verticalAlign: 'middle' }}
+          />
+        </a>
+      </div>
+      <button
+        className={`menu-toggle ${menuActive ? 'active' : ''}`}
+        onClick={toggleMenu}
+        aria-label="Menu"
+      >
         <span></span>
         <span></span>
         <span></span>
