@@ -52,6 +52,20 @@ const Chatbot = () => {
     else if (input.includes('earned wage') || input.includes('ewa') || input.includes('access salary') || input.includes('early pay')) {
       return "💰 Earned Wage Access (EWA) lets you withdraw part of salary you've already earned — without waiting for payday!\n\nKey benefits:\n• 0% interest\n• No debt traps\n• Available 24/7\n• Automatic repayment on payday\n\nYour employer needs to partner with Spirotec first. Would you like help requesting Spirotec at your workplace?";
     } 
+
+   else if (input.includes('design')|| input.includes('software engineer') || input.includes('developer') || input.includes('programmer')) {
+      return "This software was designed by a team of developers from Pakama Tech Solutions";
+   }
+
+   else if (input.includes('Makadi') || input.include('wadi') || input.includes('sei') || input.includes('sei sei')) {
+     return " AM not yet trained to speak Shona, but I can help you in English! If you have questions about Spirotec, feel free to ask in English. 😊";
+   }
+
+   else if (input.includes('owener') || input.includes('founder') || input.includes('ceo') || input.includes('who is behind')) {
+      return "Spirotec was founded Tinotenda Karemba with a passion for financial inclusion. Our team is dedicated to helping employees access their earned wages easily and affordably.";
+    }
+    
+
     else if (input.includes('how it works') || input.includes('work') || input.includes('process')) {
       return "Here's how Spirotec works:\n\n1️⃣ Your employer partners with Spirotec\n2️⃣ You sign up and work as normal\n3️⃣ Access earned wages via USSD (*123#) or app\n4️⃣ Amounts are deducted automatically on payday\n\nIt's that simple! No loans, just your own money when you need it.";
     } 
