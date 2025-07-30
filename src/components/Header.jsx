@@ -11,7 +11,7 @@ const Header = ({ className }) => {
 
   return (
     <header className={`header ${className || ''}`}>
-      <div className="logo">Spirotec</div>
+      <div className="logo">Spirotec.</div>
       <button className={`menu-toggle ${menuActive ? 'active' : ''}`} onClick={toggleMenu} aria-label="Menu">
         <span></span>
         <span></span>
