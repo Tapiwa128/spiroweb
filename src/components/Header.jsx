@@ -18,7 +18,7 @@ const Header = ({ className }) => {
           <img
             src={logo}
             alt="Spirotec Logo"
-            style={{ height: '40px', width: 'auto', verticalAlign: 'middle' }}
+            style={{ height: '61px', width: 'auto', verticalAlign: 'middle' }}
           />
         </a>
       </div>
