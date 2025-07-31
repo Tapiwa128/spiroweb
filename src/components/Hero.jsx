@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="hero-text">
         <h1>Your Money When You Need It</h1>
         <p>
-          Pay day is once a month, but life happens daily.
+          Pay day is once a month, but life happens daily
         </p>
         <div className="hero-buttons">
           <a href="#user-form" className="btn primary-btn">I Want Spirotec at My Job</a>
