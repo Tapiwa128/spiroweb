@@ -16,7 +16,7 @@ const Hero = () => {
         </div>
         <div className="hero-taglines">
           <p>You work every day, why not get paid every day?</p>
-          <p>Financial freedom is the best thing you can do for yourself.</p>
+          <p>Financial freedom is the best thing you can do for yourself</p>
         </div>
       </div>
       <div className="hero-image">
