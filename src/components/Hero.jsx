@@ -12,7 +12,7 @@ const Hero = () => {
         </p>
         <div className="hero-buttons">
           <a href="#user-form" className="btn primary-btn">I Want Spirotec at My Job</a>
-          <a href="#employer-form" className="btn secondary-btn">I'm an Employer.</a>
+          <a href="#employer-form" className="btn secondary-btn">I'm an Employer</a>
         </div>
         <div className="hero-taglines">
           <p>You work every day, why not get paid every day?</p>
